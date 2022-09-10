@@ -10,9 +10,12 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <body>  
+  <%= render 'layouts/navigation' %>
+<div class ="container">
+
+  <%= render 'layouts/messages' %>
     <%= yield %>
+</div>
   </body>
 </html>
